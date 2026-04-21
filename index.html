@@ -19,15 +19,15 @@
 
   @page {
     size: A4;
-    margin: 15mm 18mm 15mm 18mm;
+    margin: 11mm 18mm 11mm 18mm;
   }
 
   body {
     font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
     color: var(--dark);
     background: #fff;
-    font-size: 8.5pt;
-    line-height: 1.35;
+    font-size: 8.3pt;
+    line-height: 1.3;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -36,7 +36,7 @@
   .page {
     width: 210mm;
     min-height: 297mm;
-    padding: 15mm 18mm;
+    padding: 11mm 18mm;
     margin: 0 auto;
     position: relative;
   }
@@ -45,12 +45,12 @@
   .header {
     background: var(--navy);
     color: white;
-    padding: 5mm 6mm;
+    padding: 4mm 6mm;
     display: flex;
     align-items: flex-start;
     gap: 4mm;
     border-radius: 2mm;
-    margin-bottom: 3mm;
+    margin-bottom: 2mm;
   }
   .header-photo { flex-shrink: 0; }
   .profile-img {
@@ -70,12 +70,12 @@
     font-size: 9.5pt;
     font-weight: 600;
     opacity: 0.95;
-    margin-bottom: 1.5mm;
+    margin-bottom: 1mm;
   }
   .header-center .contact-line {
     font-size: 7.5pt;
     opacity: 0.88;
-    line-height: 1.5;
+    line-height: 1.4;
   }
   .header-center .contact-line a {
     color: rgba(255,255,255,0.88);
@@ -123,18 +123,18 @@
   .highlight-box {
     border-left: 2.5pt solid var(--navy);
     background: #f8f9fa;
-    padding: 2.5mm 4mm;
-    margin-bottom: 3mm;
+    padding: 2mm 4mm;
+    margin-bottom: 2mm;
     border-radius: 0 1mm 1mm 0;
   }
   .highlight-box ul { list-style: none; padding: 0; }
   .highlight-box li {
-    font-size: 7.5pt;
+    font-size: 7.3pt;
     color: var(--dark);
-    padding: 0.8mm 0;
+    padding: 0.5mm 0;
     padding-left: 8pt;
     position: relative;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   .highlight-box li::before {
     content: "\25FC";
@@ -158,40 +158,40 @@
   }
 
   /* ====== SECTIONS ====== */
-  .section { margin-bottom: 3mm; }
+  .section { margin-bottom: 2mm; }
   .section-title {
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight: 700;
     color: var(--navy);
     border-bottom: 0.5pt solid var(--light);
-    padding-bottom: 1mm;
-    margin-bottom: 2mm;
-    margin-top: 3mm;
+    padding-bottom: 0.8mm;
+    margin-bottom: 1.5mm;
+    margin-top: 2mm;
   }
   .section-title-first {
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight: 700;
     color: var(--navy);
     border-bottom: 0.5pt solid var(--light);
-    padding-bottom: 1mm;
-    margin-bottom: 2mm;
+    padding-bottom: 0.8mm;
+    margin-bottom: 1.5mm;
     margin-top: 0;
   }
 
   /* ====== TECH STACK TAGS ====== */
-  .tech-stack { margin-bottom: 3mm; }
+  .tech-stack { margin-bottom: 2mm; }
   .tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5mm;
-    margin-top: 1.5mm;
+    gap: 1mm;
+    margin-top: 1mm;
   }
   .tag {
     background: #f3f4f6;
     color: var(--mid);
-    padding: 0.5mm 2mm;
+    padding: 0.3mm 1.8mm;
     border-radius: 1mm;
-    font-size: 7pt;
+    font-size: 6.8pt;
     font-weight: 500;
   }
 
@@ -199,15 +199,15 @@
   .project {
     border: 0.5pt solid var(--light);
     border-radius: 2mm;
-    padding: 3mm 4mm;
-    margin-bottom: 3mm;
+    padding: 2mm 3.5mm;
+    margin-bottom: 2mm;
     page-break-inside: avoid;
   }
   .project-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1mm;
+    margin-bottom: 0.5mm;
   }
   .project-name {
     font-size: 10pt;
@@ -228,25 +228,25 @@
     flex-shrink: 0;
   }
   .project-role {
-    font-size: 7.5pt;
+    font-size: 7.3pt;
     color: var(--mid);
-    margin-bottom: 1.5mm;
+    margin-bottom: 1mm;
   }
   .project-validation {
-    font-size: 8pt;
+    font-size: 7.8pt;
     font-weight: 600;
     color: var(--navy);
-    margin-bottom: 1.5mm;
+    margin-bottom: 1mm;
   }
   .project ul {
     padding-left: 12pt;
     margin: 0;
   }
   .project li {
-    font-size: 8pt;
+    font-size: 7.8pt;
     color: var(--dark);
-    margin-bottom: 1mm;
-    line-height: 1.35;
+    margin-bottom: 0.5mm;
+    line-height: 1.3;
   }
   .project .tech-footer {
     display: flex;
@@ -254,8 +254,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1mm;
-    padding-top: 1.5mm;
-    margin-top: 1.5mm;
+    padding-top: 1mm;
+    margin-top: 1mm;
     border-top: 0.3pt solid var(--light);
   }
   .project .tech-footer .tags { display: flex; gap: 1.5mm; flex-wrap: wrap; }
@@ -363,6 +363,7 @@
       <div class="tech-keywords">
         <span class="tech-kw-tag">Full-Cycle Multi-Agent</span>
         <span class="tech-kw-tag">Hybrid RAG</span>
+        <span class="tech-kw-tag"> Harness Engineering</span>
         <span class="tech-kw-tag">LLM Fine-tuning (QLoRA)</span>
         <span class="tech-kw-tag">LLMOps (Langfuse&middot;DeepEval)</span>
       </div>
@@ -373,10 +374,11 @@
       <span>+82-10-7517-9503</span>
     </div>
     <div class="contact-line">
-      <span><a href="https://github.com/immortal0900">github.com/immortal0900</a></span>
-      <span><a href="https://www.youtube.com/@%ED%99%94%EC%9D%B8-immortal">youtube.com/@화인-immortal</a></span>
+      <span><a href="https://github.com/immortal0900">github</a></span>
+      <span><a href="https://immortal0900.github.io/hwain_blog/">blog</a></span>
+      <span><a href="https://www.youtube.com/@%ED%99%94%EC%9D%B8-immortal">youtube</a></span>
       <span><a href="https://canva.link/hwain">portfolio(PPT)</a></span>
-      <span><a href="https://www.linkedin.com/in/immortal0900/">linkedin.com/in/immortal0900</a></span>
+      <span><a href="https://www.linkedin.com/in/immortal0900/">linkedin</a></span>
     </div>
   </div>
   <div class="header-right">
@@ -393,7 +395,7 @@
     <li><strong>9개 AI Agent x 23개 데이터소스 분양성 검토 보고서</strong> (ReAct · Reflection · Hybrid RAG)<br> 부동산 보고서<span class="metric"> 1~2주 → 30분</span> 자동 생성 → 190개 회원사 부동산 협회 전문가 검증 통과 → <span class="metric">현업 400명이 참석한 행사 부스시연</span> → <span class="metric">한국경제 보도자료</span></li>
     <li><strong>AI Agent 미연시 멀티플레이 로그라이크 게임 NPC</strong>(SPO 장기기억 · 4요소 Hybrid Search)<br>응답 <span class="metric">8.5초→2~3초</span> · 페르소나 평가 <span class="metric">71.6%→86.7%</span> → 현업 심사위원: <span class="quote">"AI를 제거하면 핵심 재미가 사라진다"</span> → 언리얼xAI 융합 프로젝트 <span class="metric">최우수상(1위)</span></li>
     <li><strong>본질을 먼저 정의하고, 기술 선택을 도출하는 <span class="metric">Full-Cycle 개발</span></strong>(DB 설계 · Agent 구축 · Hybrid RAG · <span class="metric">정량 평가/추적</span> · 최적화)<br><span class="quote">"NPC가 사람처럼 느껴져야 한다"</span> → Mem0 한계 발견 → SPO 장기기억 자체 구축<strong> | </strong><span class="quote">"출처가 정확해야 신뢰"</span> → ReAct+Reflection 설계 · 구축</li>
-
+    <li><strong>Anthropic Harness 패턴 기반 <span class="metric">멀티에이전트 개발 시스템</span></strong> (Planner→Generator→Evaluator 세션 분리 · Slack Socket Mode HITL)<br>Planner→Generator→Evaluator 3-Agent + Slack HITL + 체크포인트 → <span class="metric">5일 작업을 3시간에 자동 생산</span> (Claude Code CLI subprocess + $15.47)</li>
     <li><strong>전체 기수 <span class="metric">유일한 운영진 공식 추천서</span> · 동료 투표 4회 중 <span class="metric">2회 최다 득표</span></strong> (1회차 · 4회차)</li>
   </ul>
 </div>
@@ -412,6 +414,12 @@
     <span class="tag">BM25</span>
     <span class="tag">DeepEval</span>
     <span class="tag">Langfuse</span>
+    <span class="tag">Harness Pattern</span>
+    <span class="tag">HITL</span>
+    <span class="tag">Claude Code CLI</span>
+    <span class="tag">OpenTelemetry</span>
+    <span class="tag">MCP</span>
+    <span class="tag">GitHub Actions</span>
     <span class="tag">OpenAI</span>
     <span class="tag">Claude</span>
     <span class="tag">Gemini</span>
@@ -423,6 +431,7 @@
     <span class="tag">Docker</span>
     <span class="tag">QLoRA</span>
     <span class="tag">LoRA</span>
+    <span class="tag">Slack API</span>
     <span class="tag">PyTorch</span>
     <span class="tag">YOLOv8</span>
     <span class="tag">ArcFace</span>
@@ -476,12 +485,12 @@
     <li><strong>Mem0 한계 발견 → SPO 구조 장기기억 자체 구축</strong>:<br> speaker/subject/content_type/importance 메타데이터 명시적 저장 → NPC 할루시네이션(화자 혼동) 제거</li>
     <li><strong>4요소 하이브리드 검색</strong> (Recency 0.15 + Importance 0.15 + Relevance 0.50 + Keyword 0.20): <br>pgvector + PGroonga Raw SQL 직접 제어 — "과일 좋아해?"에 과거 언급한 "사과" 회상 가능</li>
     <li><strong>Bi-temporal 중복방지 + 취향 변경 감지</strong>: <br>벡터유사도 55~90% 구간 LLM 판단 → Soft Delete로 과거 맥락 보존 
-    <li><strong>조건부 요약</strong> (20턴/1시간) + 중요도 기반 FIFO<br>
+    <li><strong>조건부 요약</strong> (20턴/1시간) + 중요도 기반 FIFO<br></li>
     <li><strong>응답시간 <span class="metric">8.5초→2~3초</span></strong> 최적화 | LangFuse + DeepEval 이중 품질 전략: 4캐릭터x6유형 <strong>페르소나 평가 <span class="metric">71.6%→86.7%</span></strong></li>
   </ul>
   <div class="tech-footer">
     <div class="tags">
-      <span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">Redis</span><span class="tag">GPT-5 Mini</span><span class="tag">Grok-4.1</span><span class="tag">Docker</span><span class="tag">DeepEval</span><span class="tag">LangFuse</span>
+      <span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">Redis</span><span class="tag">GPT-5 Mini</span><span class="tag">Grok-4.1</span><span class="tag">Docker</span><span class="tag">DeepEval</span><span class="tag">LangFuse</span><span class="tag">GitHub Actions CI/CD</span>
     </div>
     <span class="github"><a href="https://github.com/immortal0900/Memory_Labyrinth">github.com/immortal0900/Memory_Labyrinth</a></span>
   </div>
@@ -491,9 +500,32 @@
 
 <!-- ==================== PAGE 2 ==================== -->
 <div class="page page-break">
+<div class="section-title" style="margin-top:0;">PROJECTS (CONTINUED)</div>
+<!-- PROJECT 4: THE_FORGE -->
+<div class="project">
+  <div class="project-header">
+    <div><span class="badge-outline">Anthropic Harness 패턴</span> <span class="project-name">멀티에이전트 개발 하네스 오케스트레이터</span> <span class="project-sub">— THE_FORGE</span></div>
+    <div class="meta">2026.04 (진행중) | 1명(단독) | 설계·구현 전담</div>
+  </div>
+  <div class="project-role">Harness 오케스트레이터 설계·구현, HITL 채널(Slack/Telegram) 구축, 체크포인트 시스템, Langfuse 계층 추적</div>
+  <div class="project-validation"><a href="https://immortal0900.github.io/hwain_blog/">Anthropic Engineering 공식 하네스 설계 블로그 2편(2025.11 · 2026.03) 분석 후 자체 구현 →</a><span class="metric"> 5일 작업을 3시간 만에 완료 ($15.47)</span></div>
+  <ul>
+    <li><strong>3-Agent Harness 설계(Planner→Generator→Evaluator)</strong>: <br>세션 분리로 <strong>Self-preference Bias 제거</strong> + 컨텍스트 포화 방지 + 문서 기반 Agent 간 통신으로 맥락 소실 방어</li>
+    <li><strong>Context Engineering 극단 최적화</strong>: Claude Code CLI를 subprocess로 제어하는 "Harness 위의 Harness" 설계 → Anthropic 레퍼런스 사례(3h50m/<span class="metric">$124</span>)<strong> → 월정액 구독 쿼터 내 무제한</strong></li>
+    <li><strong>세션별 HITL + Slack 원격 통제</strong>: /resume · /revise · /exit 원격 명령 + <code>프로젝트::동작</code> 라우터 → <span class="metric">앱 1개·채널 1개·토큰 1세트로 하네스 10개 동시 실행</span> | 요약본 · 파일로 진행여부 판단</li>
+    <li><strong>자동 평가 파이프라인</strong>: Evaluator가 Sprint Contract 체크박스 vs 실제 커밋 대조 PASS/FAIL 판정 <br>| 자동 선택  안전장치 3중(1440분 · 20스프린트 · 연속 3회 FAIL)</li>
+    <li><strong>Langfuse 이중 추적 + 9단계 체크포인트</strong>: JSONL 로그 파싱 1순위 / stdout 정규식 fallback 2순위로 토큰·비용 실측 | 진행상태 기록으로 실수·재부팅·토큰 초과에도 마지막 단계부터 재개</li>
+  </ul>
+  <div class="tech-footer">
+    <div class="tags">
+      <span class="tag">Anthropic Harness</span><span class="tag">Claude Code CLI</span><span class="tag">Slack Socket Mode</span><span class="tag">Langfuse</span><span class="tag">HITL</span><span class="tag">uv</span><span class="tag">MCP</span>
+    </div>
+    <span class="github"><a href="https://github.com/immortal0900/THE_FORGE">github.com/immortal0900/THE_FORGE</a></span>
+  </div>
+</div>
 
 <!-- PROJECT 3: VOICE_PHISHING_PROTECTOR -->
-<div class="section-title" style="margin-top:0;">PROJECTS (CONTINUED)</div>
+
 
 <div class="project">
   <div class="project-header">
@@ -550,8 +582,8 @@
     <div class="compact-title"><span class="badge-outline">전시</span> 제10회 부동산산업의날 부스 전시 + 한국경제 보도자료 게재 <span class="compact-meta">| 2025.11 | 국회의원·국토부 차관 등 400명 참관</span></div>
   </div>
   <div class="compact-item">
+    <div class="compact-title"><span class="badge-outline">Live Demo</span> MCP's 1st Birthday Hackathon 부동산 입지 분석 MCP 서버 구축·배포 <span class="compact-meta">| 2025.11 | Anthropic·Gradio 주최 (등록자 6,100명+) | <a href="https://huggingface.co/spaces/immortal0900/Real-Estate-Location-Analyzer_MCP">Hugging Face Spaces Live Demo 운영 중</a></span></div>
     <div class="compact-title">제2회 컴투스 글로벌 게임개발 공모전 '컴:온' 출품 <span class="compact-meta">| 2025.10 - 2026.01 | 총 상금 4,000만원</span></div>
-    <div class="compact-title">MCP's 1st Birthday Hackathon 참가 <span class="compact-meta">| 2025.11 | Anthropic·Gradio 주최, 등록자 6,100명+ | <span><a href="https://huggingface.co/spaces/immortal0900/Real-Estate-Location-Analyzer_MCP">Hugging Face Spaces에 재배포하여 Live Demo 운영 중</a></span></div>
   </div>
 </div>
 <br>
