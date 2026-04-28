@@ -482,10 +482,11 @@
   <div class="project-role">NPC AI Agent 설계·구현(USER↔NPC / NPC↔NPC), DB 구축, DeepEval 평가, Langfuse 추적, TTS, 최종 발표</div>
   <div class="project-validation"><a href="https://root-waterlily-68c.notion.site/301aa1b417488054b5f1c6c7b8d56c20?source=copy_link">현업 기업 심사위원 평가 <span class="quote">"AI를 제거하면 핵심 재미가 사라진다"</span> — 기획→프로토→알파→베타→최종 5단계 검증 통과</a></div>
   <ul>
-    <li><strong>Mem0 한계 발견 → SPO 구조 장기기억 자체 구축</strong>:<br> speaker/subject/content_type/importance 메타데이터 명시적 저장 → NPC 할루시네이션(화자 혼동) 제거</li>
-    <li><strong>4요소 하이브리드 검색</strong> (Recency 0.15 + Importance 0.15 + Relevance 0.50 + Keyword 0.20): <br>pgvector + PGroonga Raw SQL 직접 제어 — "과일 좋아해?"에 과거 언급한 "사과" 회상 가능</li>
-    <li><strong>Bi-temporal 중복방지 + 취향 변경 감지</strong>: <br>벡터유사도 55~90% 구간 LLM 판단 → Soft Delete로 과거 맥락 보존 
-    <li><strong>조건부 요약</strong> (20턴/1시간) + 중요도 기반 FIFO<br></li>
+    <li><strong>Mem0 한계 발견 → SPO 구조 장기기억 자체 구축</strong>:<br> 주어-서술어-목적어 형태 fact 추출→ NPC 할루시네이션(화자 혼동) 제거<br>상위 키워드 추출로 "과일 좋아해?"에 과거 언급한 "사과" 회상 가능</li>
+    <li><strong>4요소 하이브리드 검색</strong> (Recency 0.15 + Importance 0.15 + Relevance 0.50 + Keyword 0.20): <br>사람처럼 중요도가 높고 최근의 기억 우선 회상</li>
+    <li><strong>Bi-temporal 중복방지 + 취향 변경 감지</strong>: <br>벡터유사도 55~90% 구간 LLM 판단 → 중복된 내용은 invalid_at 처리하여 과거 맥락 보존</li>
+
+    <li><strong>조건부 요약 (20턴/1시간) + 중요도 기반 FIFO</strong><br>과도한 요약 내용 누적 방지, 오래되고 중요하지 않은 내용부터 방출</li>
     <li><strong>응답시간 <span class="metric">8.5초→2~3초</span></strong> 최적화 | LangFuse + DeepEval 이중 품질 전략: 4캐릭터x6유형 <strong>페르소나 평가 <span class="metric">71.6%→86.7%</span></strong></li>
   </ul>
   <div class="tech-footer">
